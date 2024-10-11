@@ -1,63 +1,61 @@
+# Quizzler-iOS13
 
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+Welcome to **Quizzler-iOS13**, an engaging and interactive quiz app developed as part of a learning journey to master iOS development. This project showcases various Swift programming techniques, user interface components, and app logic that come together to create a fun and educational experience.
 
-#  Quizzler
+> This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
 
-## Our Goal
+## Project Overview
 
-The goal of this tutorial is to take you one step further in your journey of becoming an app developer. We are going to introduce you to the holy grail of mobile design patterns: the Model View Controller (MVC) pattern. A design pattern is simply a repeatable and optimised solution to a common software problem and you’ll learn more about this when use in the tutorial.
+Quizzler-iOS13 is designed to challenge users with a series of true/false questions. The questions are shuffled each time the app is launched to ensure a fresh experience for the user every time they play. The goal is to provide a simple yet intuitive interface that makes learning enjoyable and interactive.
 
-## What you will create
+### Key Features
 
-You will program a trivia quiz app. If you have another field of expertise such as law or medicine, you’ll be glad to know that multiple choice question apps are one of the most popular types of educational apps on the App Store! 
+- **Dynamic Question Handling**: The quiz logic uses a shuffled 2D array to present questions in a random order, preventing repetitiveness and ensuring variety in each playthrough.
+- **Score Tracking**: Users receive immediate feedback on their progress with a live score tracker that updates as they answer each question.
+- **Progress Indicator**: A progress bar visually represents the user's advancement through the quiz, adding a layer of motivation to complete the challenge.
+- **User Interaction**: Easy-to-use true/false buttons allow users to engage with the quiz seamlessly, making it accessible to people of all ages.
+- **End-of-Quiz Summary**: At the end of the quiz, users are provided with a summary of their performance, showcasing their score out of the total number of questions.
 
-## What you will learn
+## Learning Outcomes
 
-* How to programmatically change UI elements such as Labels and Buttons.
-* What is a design pattern and how is it used in programming.
-* How to use the Model-View-Controller or MVC pattern for app development.
-* Learn about Swift Structures how to instantiate a struct instance.
-* Understand the difference between value types and reference types. 
-* Learn about Swift Classes and creating Objects.
-* Compare Swift Classes with Swift Structs and know when to use which.
-* Learn about Object Oriented Programming.
-* How to refactor code and stay organised.
+This project serves as an excellent demonstration of iOS development skills, including:
 
+- **Swift Basics**: Understanding core Swift concepts like variables, conditionals, loops, and control flow.
+- **UI Components**: Working with UIKit elements such as labels, buttons, and progress bars to build a responsive user interface.
+- **Data Structures**: Using arrays and 2D arrays to manage and manipulate quiz data.
+- **User Interaction**: Implementing user actions and dynamically updating the UI in response to those interactions.
+- **Ternary Operator Usage**: Leveraging Swift's ternary operator for concise and efficient decision-making within the code.
+- **Code Organization**: Writing clean, structured, and readable code for future scalability and maintenance.
 
+## Technologies Used
 
-## Default Quiz
+- **Swift**: The primary programming language used for building the app.
+- **UIKit**: Apple's UI framework to design and develop the interface components.
+- **Xcode**: The integrated development environment (IDE) used to write and test the code.
 
-```
-  Question(q: "A slug's blood is green.", a: "True"),
-        Question(q: "Approximately one quarter of human bones are in the feet.", a: "True"),
-        Question(q: "The total surface area of two human lungs is approximately 70 square metres.", a: "True"),
-        Question(q: "In West Virginia, USA, if you accidentally hit an animal with your car, you are free to take it home to eat.", a: "True"),
-        Question(q: "In London, UK, if you happen to die in the House of Parliament, you are technically entitled to a state funeral, because the building is considered too sacred a place.", a: "False"),
-        Question(q: "It is illegal to pee in the Ocean in Portugal.", a: "True"),
-        Question(q: "You can lead a cow down stairs but not up stairs.", a: "False"),
-        Question(q: "Google was originally called 'Backrub'.", a: "True"),
-        Question(q: "Buzz Aldrin's mother's maiden name was 'Moon'.", a: "True"),
-        Question(q: "The loudest sound produced by any animal is 188 decibels. That animal is the African Elephant.", a: "False"),
-        Question(q: "No piece of square dry paper can be folded in half more than 7 times.", a: "False"),
-        Question(q: "Chocolate affects a dog's heart and nervous system; a few ounces are enough to kill a small dog.", a: "True")
-```
+## How It Works
 
-## Multiple Choice Quiz
+1. **Starting the Quiz**: When the app is launched, a shuffled question is displayed, ensuring that the order changes each time you play.
+2. **Answering Questions**: Users press either the "True" or "False" button to respond to each question.
+3. **Real-Time Feedback**: The app immediately updates the score and moves to the next question, showing real-time progress on a progress bar.
+4. **Quiz Completion**: When all questions are answered, the user is presented with their final score and a message indicating the end of the quiz.
 
-```
- Question(q: "Which is the largest organ in the human body?", a: ["Heart", "Skin", "Large Intestine"], correctAnswer: "Skin"),
-        Question(q: "Five dollars is worth how many nickels?", a: ["25", "50", "100"], correctAnswer: "100"),
-        Question(q: "What do the letters in the GMT time zone stand for?", a: ["Global Meridian Time", "Greenwich Mean Time", "General Median Time"], correctAnswer: "Greenwich Mean Time"),
-        Question(q: "What is the French word for 'hat'?", a: ["Chapeau", "Écharpe", "Bonnet"], correctAnswer: "Chapeau"),
-        Question(q: "In past times, what would a gentleman keep in his fob pocket?", a: ["Notebook", "Handkerchief", "Watch"], correctAnswer: "Watch"),
-        Question(q: "How would one say goodbye in Spanish?", a: ["Au Revoir", "Adiós", "Salir"], correctAnswer: "Adiós"),
-        Question(q: "Which of these colours is NOT featured in the logo for Google?", a: ["Green", "Orange", "Blue"], correctAnswer: "Orange"),
-        Question(q: "What alcoholic drink is made from molasses?", a: ["Rum", "Whisky", "Gin"], correctAnswer: "Rum"),
-        Question(q: "What type of animal was Harambe?", a: ["Panda", "Gorilla", "Crocodile"], correctAnswer: "Gorilla"),
-        Question(q: "Where is Tasmania located?", a: ["Indonesia", "Australia", "Scotland"], correctAnswer: "Australia")
-```        
+## Installation and Setup
 
+To run this project locally on your iOS device or simulator:
 
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+1. Clone this repository to your local machine.
+2. Open the project in **Xcode**.
+3. Build and run the project on your simulator or a connected iOS device.
 
-![End Banner](Documentation/readme-end-banner.png)
+## Future Improvements
+
+In the future, the project will be enhanced by incorporating Swift structures (Structs), the Model-View-Controller (MVC) design pattern, and object-oriented programming principles. These improvements aim to optimize the codebase, making it more modular, scalable, and maintainable, while also deepening the understanding of these core concepts in Swift.
+
+## Credits
+
+Special thanks to **The App Brewery** for the foundational guidance provided through their course. This project is built as a companion to their teachings, and you can explore more at [The App Brewery](https://www.appbrewery.co/).
+
+## License
+
+This project is for educational purposes, developed as part of a learning process in iOS app development.
